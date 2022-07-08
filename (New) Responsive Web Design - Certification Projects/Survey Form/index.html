@@ -1,68 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title></title>
+        <title>Surfer Boy Pizza</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
     </head>
     <body>
-        <h1 id="title">Surfer Boy Pizza</h1>
-  <p id="description">Delivered HOT to your door</p>
-  <form id="survey-form">
+      <h1 id="title">Surfer Boy Pizza</h1>
+      <h2 id="description">Delivered HOT to your door</h2>
 
-    <fieldset>
-      <label id="name-label">Name
-        <input type="text" id="name" name="name" placeholder="Full Name" required>
-      </label>
-
-      <label id="email-label">Email
-        <input type="email" id="email" placeholder="E-mail" required>
-      </label>
-
-      <label id="number-label">Number
-        <input type="number" id="number" placeholder="Number" min="8" max="11" required>
-      </label>
-    </fieldset>
-
-    <fieldset>
-      <label>
-        <select id="dropdown">
-          <option>I'd like...</option>
-          <option>Pepperoni</option>
-          <option>Sausage</option>
-        </select>
-      </label>
-    </fieldset>
-
-    <fieldset> <!--Why do we use fieldset-->
-      <label> Picked <!--Why do we use label, value-->
-        <input type="radio" name="flavour" value="1">
-      </label>
-      <label> Delivery
-        <input type="radio" name="flavour" value="2">
-      </label>
-    </fieldset>
-
-    <fieldset>
-      <p>How would you like to pay?</p>
-      <label>
-        <input type="checkbox" name="pay" value="1"> <!--check what to write on value-->
-      </label>
-      <label>
-        <input type="checkbox" name="pay" value="2">
-      </label>
-    </fieldset>
-
-    <fieldset>
-      <p>Suggestion Box</p>
-      <label>
-        <textarea row="5" col="10"></textarea>
-      </label>
-    </fieldset>
-
-    <input type="submit" id="submit">
- 
-  </form>
+      <form id="survey-form">
+        <fieldset class="background">
+          <h3>Personal Info</h3>
+          <label id="name-label">Name
+            <input type="text" id="name" name="name" placeholder="Full Name" required>
+          </label>
+          <br>
+          <label id="email-label">Email
+            <input type="email" id="email" placeholder="E-mail" required>
+          </label>
+          <br>  
+          <label id="number-label">Phone Number
+            <input type="number" id="number" placeholder="Number" min="8" max="11" required>
+          </label>
+          <br>
+        </fieldset>
+        <hr>  
+        <fieldset class="background">
+          <label>
+            <h3>Choose your pizza!</h3>
+            <select id="dropdown">
+              <option>I'd like...</option>
+              <option>Pepperoni</option>
+              <option>Sausage</option>
+              <option>Pineapple</option>
+              <option>Green Peppers</option>
+              <option>Red Onion</option>
+              <option>Mushrooms & Black Olives</option>
+            </select>
+          </label>
+        </fieldset>
+        <hr>
+        <fieldset> <!--Why do we use fieldset-->
+          <h3>In-person or Delivery?</h3>
+          <label> In-person <!--Why do we use label, value-->
+            <input type="radio" name="flavour" value="1">
+          </label>
+          <label> Delivery
+            <input type="radio" name="flavour" value="2">
+          </label>
+        </fieldset>
+        <hr>
+        <fieldset>
+          <h3>How would you like to pay?</h3>
+          <label> Cash
+            <input type="checkbox" name="pay" value="1"> <!--check what to write on value-->
+          </label>
+          <label> Debit Card
+            <input type="checkbox" name="pay" value="2">
+          </label>
+        </fieldset>
+        <hr>
+        <fieldset>
+          <h3>How can we improve your experience at Surfer Boy Pizza? Write your suggestion below.</h3>
+          <label>
+            <textarea row="5" col="10"></textarea>
+          </label>
+        </fieldset>
+        <br>
+        <input type="submit" id="submit" value="submit"> <!--wh yadd value?-->
+      </form>
     </body>
 </html>

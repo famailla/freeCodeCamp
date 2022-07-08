@@ -1,7 +1,29 @@
 body {
-    background-image: url("https://wallpaperaccess.com/full/1750913.jpg");
-  }
-  
-  #title{
-    font-family: 'Trispace', sans-serif;
-  }
+    /*background-image: url("https://lh3.googleusercontent.com/7DJ5GwQzJhpC2-Grke4nq_sZ2RTODucy7A5daVhgSbUV2N5RgqDdeiiSUBxJIrDhvSdfOf6H_hmwvPD1H8a26RzOBuZBzWdfqtGrm0CentoWE2j3nz_p0YnciVzlZAU9qmMLl-4Y=w2400");*/
+    width: 39%;
+    color: black;
+}
+
+#title{
+  font-family: 'Trispace', sans-serif;
+}
+
+h1, h2{
+  text-align: center;
+}
+
+form{
+  max-width: 500px;
+	margin: auto;
+  padding-bottom: 2em;
+}
+/**/
+
+input[type="submit"]{
+  display: block;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+
+  min-width: 300px;
+}
