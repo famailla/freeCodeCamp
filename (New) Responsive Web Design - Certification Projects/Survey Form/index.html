@@ -13,16 +13,20 @@
       <form id="survey-form">
         <fieldset class="background">
           <h3>Personal Info</h3>
-          <label id="name-label">Name
+          <label id="name-label">Name:
             <input type="text" id="name" name="name" placeholder="Full Name" required>
           </label>
           <br>
-          <label id="email-label">Email
+          <label id="email-label">Email:
             <input type="email" id="email" placeholder="E-mail" required>
           </label>
           <br>  
-          <label id="number-label">Phone Number
-            <input type="number" id="number" placeholder="Number" min="8" max="11" required>
+          <label id="number-label">Phone Number:
+            <input type="tel" id="number" placeholder="Number" min="8" max="11" required>
+          </label>
+          <br>
+          <label id="name-label">Address:
+            <input type="text" id="address" name="address" placeholder="Address" required>
           </label>
           <br>
         </fieldset>
@@ -45,27 +49,55 @@
         <fieldset> <!--Why do we use fieldset-->
           <h3>In-person or Delivery?</h3>
           <label> In-person <!--Why do we use label, value-->
-            <input type="radio" name="flavour" value="1">
+            <input type="radio" id="inperson" name="flavour" value="1">
           </label>
           <label> Delivery
-            <input type="radio" name="flavour" value="2">
+            <input type="radio" id="delivery" name="flavour" value="2">
           </label>
         </fieldset>
         <hr>
         <fieldset>
           <h3>How would you like to pay?</h3>
           <label> Cash
-            <input type="checkbox" name="pay" value="1"> <!--check what to write on value-->
+            <input type="radio" id="cash" name="pay" value="1"> <!--check what to write on value-->
           </label>
           <label> Debit Card
-            <input type="checkbox" name="pay" value="2">
+            <input type="radio" id= "debitcard" name="pay" value="2">
           </label>
         </fieldset>
         <hr>
         <fieldset>
-          <h3>How can we improve your experience at Surfer Boy Pizza? Write your suggestion below.</h3>
+          <h3>What are your favourite flavours?</h3>
+          <label> Pepperoni
+            <input type="checkbox" id="pepperoni" name="pepperoni" value="1"> <!--check what to write on value-->
+          </label>
+          <br>
+          <label> Sausage
+            <input type="checkbox" id= "sausage" name="sausage" value="2">
+          </label>
+          <br>
+          <label> Pineapple
+            <input type="checkbox" id="pineapple" name="pineapple" value="3"> <!--check what to write on value-->
+          </label>
+          <br>
+          <label> Green Peppers
+            <input type="checkbox" id= "greenpeppers" name="greenpeppers" value="4">
+          </label>
+          <br>
+          <label> Red Onion
+            <input type="checkbox" id= "redonion" name="redonion" value="5">
+          </label>
+          <br>
+          <label> Mushrooms & Black Olives
+            <input type="checkbox" id="musholives" name="musholives" value="6"> <!--check what to write on value-->
+          </label>
+          <br>
+        </fieldset>
+        <hr>
+        <fieldset>
+          <h3 class="width">How can we improve your experience at Surfer Boy Pizza? Write your suggestion below.</h3>
           <label>
-            <textarea row="5" col="10"></textarea> <!--why does textarea move?-->
+            <textarea class="width" row="10" col="10"></textarea> <!--why does textarea move?-->
           </label>
         </fieldset>
         <br>
