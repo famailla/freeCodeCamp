@@ -7,101 +7,100 @@
         <link href="styles.css" rel="stylesheet">
     </head>
     <body>
-      <h1 id="title">Surfer Boy Pizza</h1>
-      <h2 id="description">Delivered HOT to your door</h2>
-
-      <form id="survey-form">
-        <fieldset class="background">
-          <h3>Personal Info</h3>
-          <label id="name-label">Name:
-            <input type="text" id="name" name="name" placeholder="Full Name" required>
-          </label>
+      <header>
+        <h1 id="title">Surfer Boy Pizza</h1>
+        <h2 id="description">Delivered HOT to your door</h2>    
+      </header>
+      
+      <main>
+        <form id="survey-form" action="#" method="post">
+          <fieldset class="background">
+            <h3>Personal Info</h3>
+            <label for="name" id="name-label">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Full Name" class="inline" required>
+            <br>
+            <label for="email" id="email-label">Email:</label>
+              <input type="email" id="email" placeholder="E-mail" class="inline" required>
+            <br>  
+            <label for="number" id="number-label">Phone Number:</label>
+              <input type="tel" id="number" placeholder="Number" min="8" max="11" class="inline" required>
+            <br>
+            <label for="address" id="name-label">Address:</label>
+              <input type="text" id="address" name="address" placeholder="Address" class="inline" required>
+            <br>
+          </fieldset>
+          <hr>  
+          <fieldset class="background">
+            <label>
+              <h3>Choose your pizza!</h3>
+              <select id="dropdown" required>
+                <option value="taste">I'd like...</option>
+                <option value="pepperoni">Pepperoni</option>
+                <option value="sausage">Sausage</option>
+                <option value="pineapple">Pineapple</option>
+                <option value="green_peppers">Green Peppers</option>
+                <option value="red_onion">Red Onion</option>
+                <option value="mush_black_onions">Mushrooms & Black Olives</option>
+              </select>
+            </label>
+          </fieldset>
+          <hr>
+          <fieldset> <!--Why do we use fieldset-->
+            <h3>In-person or Delivery?</h3>
+            <label for="inperson"> In-person <!--Why do we use label, value--></label>
+              <input type="radio" id="inperson" name="flavour" value="1">
+            
+            <label for="delivery"> Delivery</label>
+              <input type="radio" id="delivery" name="flavour" value="2">
+            
+          </fieldset>
+          <hr>
+          <fieldset>
+            <h3>How would you like to pay?</h3>
+            <label for="cash"> Cash</label>
+              <input type="radio" id="cash" name="pay" value="1"> <!--check what to write on value-->
+            
+            <label for="debitcard"> Debit Card</label>
+              <input type="radio" id= "debitcard" name="pay" value="2">
+            
+          </fieldset>
+          <hr>
+          <fieldset>
+            <h3>What are your favourite flavours?</h3>
+            <label for="pepperoni"> Pepperoni</label>
+              <input type="checkbox" id="pepperoni" name="pepperoni" value="1"> <!--check what to write on value-->
+            
+            <br>
+            <label for="sausage"> Sausage</label>
+              <input type="checkbox" id= "sausage" name="sausage" value="2">
+            
+            <br>
+            <label for="pineapple"> Pineapple</label>
+              <input type="checkbox" id="pineapple" name="pineapple" value="3"> <!--check what to write on value-->
+            
+            <br>
+            <label for="greenpeppers"> Green Peppers</label>
+              <input type="checkbox" id= "greenpeppers" name="greenpeppers" value="4">
+            
+            <br>
+            <label for="redonion"> Red Onion</label>
+              <input type="checkbox" id= "redonion" name="redonion" value="5">
+            
+            <br>
+            <label for="musholives"> Mushrooms & Black Olives</label>
+              <input type="checkbox" id="musholives" name="musholives" value="6"> <!--check what to write on value-->
+            
+            <br>
+          </fieldset>
+          <hr>
+          <fieldset>
+            <h3 class="width">How can we improve your experience at Surfer Boy Pizza? Write your suggestion below.</h3>
+            <textarea class="width" row="10" col="10"></textarea> <!--why does textarea move?-->  
+          </fieldset>
           <br>
-          <label id="email-label">Email:
-            <input type="email" id="email" placeholder="E-mail" required>
-          </label>
-          <br>  
-          <label id="number-label">Phone Number:
-            <input type="tel" id="number" placeholder="Number" min="8" max="11" required>
-          </label>
-          <br>
-          <label id="name-label">Address:
-            <input type="text" id="address" name="address" placeholder="Address" required>
-          </label>
-          <br>
-        </fieldset>
-        <hr>  
-        <fieldset class="background">
-          <label>
-            <h3>Choose your pizza!</h3>
-            <select id="dropdown">
-              <option>I'd like...</option>
-              <option>Pepperoni</option>
-              <option>Sausage</option>
-              <option>Pineapple</option>
-              <option>Green Peppers</option>
-              <option>Red Onion</option>
-              <option>Mushrooms & Black Olives</option>
-            </select>
-          </label>
-        </fieldset>
-        <hr>
-        <fieldset> <!--Why do we use fieldset-->
-          <h3>In-person or Delivery?</h3>
-          <label> In-person <!--Why do we use label, value-->
-            <input type="radio" id="inperson" name="flavour" value="1">
-          </label>
-          <label> Delivery
-            <input type="radio" id="delivery" name="flavour" value="2">
-          </label>
-        </fieldset>
-        <hr>
-        <fieldset>
-          <h3>How would you like to pay?</h3>
-          <label> Cash
-            <input type="radio" id="cash" name="pay" value="1"> <!--check what to write on value-->
-          </label>
-          <label> Debit Card
-            <input type="radio" id= "debitcard" name="pay" value="2">
-          </label>
-        </fieldset>
-        <hr>
-        <fieldset>
-          <h3>What are your favourite flavours?</h3>
-          <label> Pepperoni
-            <input type="checkbox" id="pepperoni" name="pepperoni" value="1"> <!--check what to write on value-->
-          </label>
-          <br>
-          <label> Sausage
-            <input type="checkbox" id= "sausage" name="sausage" value="2">
-          </label>
-          <br>
-          <label> Pineapple
-            <input type="checkbox" id="pineapple" name="pineapple" value="3"> <!--check what to write on value-->
-          </label>
-          <br>
-          <label> Green Peppers
-            <input type="checkbox" id= "greenpeppers" name="greenpeppers" value="4">
-          </label>
-          <br>
-          <label> Red Onion
-            <input type="checkbox" id= "redonion" name="redonion" value="5">
-          </label>
-          <br>
-          <label> Mushrooms & Black Olives
-            <input type="checkbox" id="musholives" name="musholives" value="6"> <!--check what to write on value-->
-          </label>
-          <br>
-        </fieldset>
-        <hr>
-        <fieldset>
-          <h3 class="width">How can we improve your experience at Surfer Boy Pizza? Write your suggestion below.</h3>
-          <label>
-            <textarea class="width" row="10" col="10"></textarea> <!--why does textarea move?-->
-          </label>
-        </fieldset>
-        <br>
-        <input type="submit" id="submit" value="submit"> <!--wh yadd value?-->
-      </form>
+          <button type="submit">Enviar</button> <!--wh yadd value?-->
+        </form>
+      </main>  
+      
     </body>
 </html>
